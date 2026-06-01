@@ -1,0 +1,35 @@
+.dual-viewer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.dual-viewer__pane {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.dual-viewer__pane--left {
+  display: flex;
+  flex-direction: column;
+}
+
+.dual-viewer__pane--right {
+  display: flex;
+  flex-direction: column;
+}
+
+.dual-viewer__divider {
+  width: 2px;
+  background-color: #374151;
+  flex-shrink: 0;
+}
+
+.dual-viewer--linked .dual-viewer__pane {
+  /* Linked state: visual cue (optional) */
+}
+
+.dual-viewer--unlinked .dual-viewer__pane {
+  /* Unlinked state */
+}
